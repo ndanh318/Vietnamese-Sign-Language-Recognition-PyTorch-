@@ -50,6 +50,7 @@ if __name__ == '__main__':
     training_set = VSLR_Dataset(root_path, mode="train")
 
     # visualize random 20 images
+    plt.figure(figsize=(8, 8))
     random_samples = random.sample(range(len(training_set)), 20)
     for idx, random_idx in enumerate(random_samples):
         plt.subplot(4, 5, idx + 1)
@@ -59,4 +60,5 @@ if __name__ == '__main__':
         plt.axis("off")
 
     plt.tight_layout()
+    plt.savefig("../images/dataset", bbox_inches="tight")
     plt.show()

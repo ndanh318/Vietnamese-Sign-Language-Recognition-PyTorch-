@@ -1,5 +1,6 @@
 import cv2
 import math
+import numpy as np
 import argparse
 
 from src.hand_tracking import HandDetector

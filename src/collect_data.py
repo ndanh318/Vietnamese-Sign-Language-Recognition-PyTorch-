@@ -5,8 +5,8 @@ import numpy as np
 import argparse
 import math
 
-from Script.src.VSLR.src.hand_tracking import HandDetector
-from config import *
+from src.hand_tracking import HandDetector
+from src.config import *
 
 
 def get_args():
@@ -70,7 +70,7 @@ def main(args):
             # cv2.imshow('Image Crop', imgCrop)
             # cv2.imshow('Image White', imgWhite)
 
-        if elapsed_time < 8:
+        if elapsed_time < 20:
             cv2.putText(image, "Press ""s"" to collect image for {} class".format(input_alphabet),
                         (15, 30), cv2.FONT_HERSHEY_SIMPLEX,
                         0.7, WHITE, 2)
