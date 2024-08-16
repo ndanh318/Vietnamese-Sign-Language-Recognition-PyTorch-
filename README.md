@@ -22,19 +22,19 @@ This project focuses on developing a system to recognize and interpret Vietnames
 ## Project Structure
 ```bash
 Vietnamese-Sign-Language-Recognition-(PyTorch)/
-├── data/alphabet                       # Data files
-├── demo/                   		    # demo
-├── images/                   		    # images
+├── data/alphabet                           # Data files
+├── demo/                   		    # Demo
+├── images/                   		    # Images
 ├── src/                      		    # Source code for the project
-│   ├── classification.py               # Script for classification
-│   ├── collect_data.py           		# Script for collecting new data
+│   ├── classification.py                   # Script for classification
+│   ├── collect_data.py           	    # Script for collecting new data
 │   ├── config.py           		    # Script for configuration settings
 │   ├── dataset.py           		    # Script for dataset
-│   ├── hand_tracking.py           		# Script for hand detection
-│   ├── model.py           		        # Script for CNNs model
-│   ├── utils.py                        # Script for snippets
-├── trained_models/                     # Saved models and parameters
-├── inferent.py          		        # Script for inference
+│   ├── hand_tracking.py           	    # Script for hand detection
+│   ├── model.py           		    # Script for CNNs model
+│   ├── utils.py                            # Script for snippets
+├── trained_models/                         # Saved models and parameters
+├── inferent.py          		    # Script for inference
 ├── requirements.txt          		    # Python packages required
 ├── train.py          		            # Script for training
 ├── README.md                 		    # Project documentation
@@ -51,7 +51,9 @@ pip install -r requirements.txt
 ```
 3. **Download the VSL dataset**
 The dataset is available [here](https://github.com/ndanh318/Vietnamese-Sign-Language-Recognition-PyTorch-/tree/master/dataset/alphabet). After downloading, place it in the dataset/ directory.
+
 ![Dataset](https://github.com/ndanh318/Vietnamese-Sign-Language-Recognition-PyTorch-/blob/master/images/dataset.png)
+
 Or you can create your own dataset:
 ```bash
 python src/collect_data.py -d [DATA_PATH] -n [NUM_IMAGE]
